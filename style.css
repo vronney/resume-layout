@@ -1,0 +1,472 @@
+*,
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  width: auto;
+  height: 99vh;
+  /* margin: 2px; */
+}
+
+.container1, .container2 {
+  float: left;
+  display: inline;
+}
+
+.container1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(1fr, 1fr));
+  grid-column-gap: 10px;
+  margin-left: 250px;
+  margin-right: auto;
+  padding: 10px;
+  width: 11in;
+  border: 1px solid black;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+
+.container2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(1fr, 1fr));
+  grid-row-gap: 3px;
+  /* border: 1px solid black;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6); */
+  margin-left: 1.5px;
+}
+
+.image {
+  display: grid;
+  grid-column: 1 / span 1;
+  /* margin-right: 10px; */
+  margin: 0 0 0 -10px;
+  height: 1fr;
+  width: 1fr;
+  grid-row-gap: 0;
+}
+
+.image img {
+  display: flex;
+  height: 150px;
+  width: 100px;
+  align-items: baseline;
+  margin-top: -10px;
+}
+
+.about-me {
+  display: grid;
+  grid-column: 1 / span 1;
+  grid-row: 2;
+  height: 1fr;
+  width: 1fr;
+  border: 1px solid black;
+  margin: 0 0 0 -10px;
+  grid-row-gap: 0;
+  position: relative;
+}
+
+.aboutMe-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* The arrow on the right of the block is created */
+.about-me:after,
+.about-me:before {
+  left: 100%;
+  top: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.about-me:hover::after {
+  border-color: transparent;
+  border-left-color: yellow;
+  border-width: 15px;
+  margin-top: -15px;
+}
+
+.about-me:hover::before {
+  border-color: transparent;
+  border-left-color: black;
+  border-width: 16px;
+  margin-top: -16px;
+}
+
+.experience-sideTab {
+  display: grid;
+  grid-column: 1 / span 1;
+  grid-row: 3;
+  height: 1fr;
+  width: 1fr;
+  border: 1px solid black;
+  margin: 0 0 0 -10px;
+  grid-row-gap: 0;
+  position: relative;
+}
+
+.experience-sideTab-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.experience-sideTab:after,
+.experience-sideTab:before {
+  left: 100%;
+  top: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.experience-sideTab:hover::after {
+  border-color: transparent;
+  border-left-color: yellow;
+  border-width: 15px;
+  margin-top: -15px;
+}
+
+.experience-sideTab:hover::before {
+  border-color: transparent;
+  border-left-color: black;
+  border-width: 16px;
+  margin-top: -16px;
+}
+
+.education-sideTab {
+  display: grid;
+  grid-column: 1 / span 1;
+  grid-row: 4;
+  height: 1fr;
+  width: 1fr;
+  border: 1px solid black;
+  margin: 0 0 0 -10px;
+  grid-row-gap: 0;
+  position: relative;
+}
+
+.education-sideTab-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.education-sideTab:after,
+.education-sideTab:before {
+  left: 100%;
+  top: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.education-sideTab:hover::after {
+  border-color: transparent;
+  border-left-color: yellow;
+  border-width: 15px;
+  margin-top: -15px;
+}
+
+.education-sideTab:hover::before {
+  border-color: transparent;
+  border-left-color: black;
+  border-width: 16px;
+  margin-top: -16px;
+}
+
+.projects-sideTab {
+  display: grid;
+  grid-column: 1 / span 1;
+  grid-row: 5;
+  height: 1fr;
+  width: 1fr;
+  border: 1px solid black;
+  margin: 0 0 0 -10px;
+  grid-row-gap: 0;
+  position: relative;
+}
+
+.projects-sideTab-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects-sideTab:after,
+.projects-sideTab:before {
+  left: 100%;
+  top: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.projects-sideTab:hover::after {
+  border-color: transparent;
+  border-left-color: yellow;
+  border-width: 15px;
+  margin-top: -15px;
+}
+
+.projects-sideTab:hover::before {
+  border-color: transparent;
+  border-left-color: black;
+  border-width: 16px;
+  margin-top: -16px;
+}
+
+.skills-sideTab {
+  display: grid;
+  grid-column: 1 / span 1;
+  grid-row: 6;
+  height: 1fr;
+  width: 1fr;
+  border: 1px solid black;
+  margin: 0 0 0 -10px;
+  grid-row-gap: 0;
+  position: relative;
+}
+
+.skills-sideTab-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills-sideTab:after,
+.skills-sideTab:before {
+  left: 100%;
+  top: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.skills-sideTab:hover::after {
+  border-color: transparent;
+  border-left-color: yellow;
+  border-width: 15px;
+  margin-top: -15px;
+}
+
+.skills-sideTab:hover::before {
+  border-color: transparent;
+  border-left-color: black;
+  border-width: 16px;
+  margin-top: -16px;
+}
+
+.awards-sideTab {
+  display: grid;
+  grid-column: 1 / span 1;
+  grid-row: 7 /span 2;
+  height: 1fr;
+  width: 1fr;
+  border: 1px solid black;
+  margin: 0 0 -10.5px -10px;
+  grid-row-gap: 0;
+  position: relative;
+}
+
+.awards-sideTab-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.awards-sideTab:after,
+.awards-sideTab:before {
+  left: 100%;
+  top: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.awards-sideTab:hover::after {
+  border-color: transparent;
+  border-left-color: yellow;
+  border-width: 15px;
+  margin-top: -15px;
+}
+
+.awards-sideTab:hover::before {
+  border-color: transparent;
+  border-left-color: black;
+  border-width: 16px;
+  margin-top: -16px;
+}
+
+.about-me:hover,
+.experience-sideTab:hover, 
+.education-sideTab:hover,
+.projects-sideTab:hover,
+.skills-sideTab:hover,
+.awards-sideTab:hover {
+  background-color: yellow;
+}
+
+.header {
+    grid-column: 2 / span 3;
+}
+
+.contact-info {
+    grid-column: 5 / span 1;
+}
+
+.experience {
+  grid-column: 2 / span 3;
+  grid-row: 2; 
+}
+
+.experience-header, .skills {
+  /* margin-top: 30px; */
+}
+
+.experience-header, .education-header, .projects-header, .skills-header, .awards-header, .languages-header {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  /* color: blue; */
+  margin-bottom: 10px;
+}
+
+h4 {
+  color: blue;
+}
+
+.contact-info, .header {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.company-name1,
+.company-name2,
+.company-name3,
+.company-name4 {
+  grid-column: 2 / span 3;
+}
+
+.company-name2 {
+  grid-row: 3;
+}
+
+.education {
+  grid-column: 2 / span 3;
+  grid-gap: 7
+}
+
+.projects {
+  grid-column: 2 / span 3;
+  grid-row: 8;
+}
+
+.skills {
+   grid-column: 5 / span 1;
+   grid-row: 2;
+}
+
+.awards {
+   grid-column: 5 / span 1;
+   grid-row: 3;
+}
+
+.languages {
+   grid-column: 5 / span 1;
+   grid-row: 4;
+}
+
+.linkedIn-tab {
+  grid-column: 1 /span 1;
+  background-color: yellow;
+  border: 1px solid black;
+  margin: 0;
+}
+
+.linkedIn-text {
+  width: 30px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.github-tab {
+  grid-column: 1 /span 1;
+  grid-row: 2;
+  background-color: yellow;
+  margin: 0;
+  border: 1px solid black;
+}
+
+.github-text {
+  width: 30px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.codepen-tab {
+  grid-column: 1 /span 1;
+  grid-row: 3;
+  background-color: yellow;
+  margin: 0;
+  border: 1px solid black;
+}
+
+.codepen-text {
+  width: 30px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.copyright-tab {
+  grid-column: 1 /span 1;
+  grid-row: 4;
+  background-color: black;
+  margin: 0;
+  border: 1px solid black;
+}
+
+.copyright-text {
+  display: inline-block;
+  width: 30px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  writing-mode: vertical-rl;
+  text-orientation: sideways;
+  padding: 1px;
+  font-size: .75em;
+  color: white;
+}
+
+*>div {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
