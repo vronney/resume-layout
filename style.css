@@ -470,3 +470,29 @@ h4 {
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
+@media only screen and (max-width: 500px) {
+  body {
+    font-size: .7em;
+    width: 400px;
+  }
+  
+  .image {
+    height: 50px; 
+  }
+
+  .header {
+    margin-top: 0;
+  }
+
+  .contact-info {
+    margin-top: 0;
+  }
+
+  .container1 {
+    grid-auto-columns: min-content;
+    width: 70vw;
+    margin-left: 20px;
+    margin-right: auto;
+    align-content: center;
+  }
