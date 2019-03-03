@@ -12,8 +12,8 @@ body {
 }
 
 .container1, .container2 {
-  float: left;
   display: inline;
+  float: left;
 }
 
 .container1 {
@@ -342,9 +342,9 @@ body {
   grid-row: 2; 
 }
 
-.experience-header, .skills {
-  /* margin-top: 30px; */
-}
+/* .experience-header, .skills {
+  /* margin-top: 30px; 
+} */
 
 .experience-header, .education-header, .projects-header, .skills-header, .awards-header, .languages-header {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -469,9 +469,10 @@ h4 {
 *>div {
     margin-top: 10px;
     margin-bottom: 10px;
-}
+  }
 
-@media only screen and (max-width: 500px) {
+
+/* @media only screen and (max-width: 500px) {
   body {
     font-size: .7em;
     width: 400px;
@@ -496,3 +497,108 @@ h4 {
     margin-right: auto;
     align-content: center;
   }
+} */
+
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+  .container1 {
+    margin-left: 2px;
+    margin-right: 2px;
+    display: grid;
+    grid-template-areas: 
+      "header"
+      "experience"
+      "company-name2"
+      "company-name3"
+      "company-name4"
+      "education"
+      "projects"
+      "skills"
+      "languages"
+      "awards";
+    width: auto;
+  }
+
+  .header {
+    grid-area: header;
+    margin-bottom: 10px;
+  }
+
+  /* .contact-info {
+    grid-area: contact;
+  } */
+
+  .experience {
+    grid-area: experience;
+  }
+
+  .company-name2 {
+    grid-area: company-name2;
+  }
+
+  .company-name3 {
+    grid-area: company-name3;
+  }
+
+  .company-name4 {
+    grid-area: company-name4;
+  }
+
+  .education {
+    grid-area: education;
+  }
+
+  .projects {
+    grid-area: projects;
+  }
+
+  .skills {
+    grid-area: skills;
+  }
+
+  .languages {
+    grid-area: languages;
+  }
+
+  .awards {
+    grid-area: awards;
+  }
+
+  .image,
+  .contact-info,
+  .about-me,
+  .experience-sideTab,
+  .education-sideTab,
+  .projects-sideTab,
+  .skills-sideTab,
+  .awards-sideTab  {
+    display: none;
+  }
+
+  .container2 {
+    display: flex;
+  }
+  
+  .linkedIn-tab,
+  .github-tab,
+  .codepen-tab,
+  .copyright-tab {
+    height: 40px;
+  }
+
+  .linkedIn-tab {
+    margin-left: 2px;
+  }
+
+  .copyright-tab {
+    width: 70vw;
+  }
+
+  .copyright-text {
+    writing-mode: initial;
+    width: 150px;
+    align-items: initial;
+    line-height: 35px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
