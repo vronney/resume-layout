@@ -503,8 +503,12 @@ h4 {
   .container1 {
     margin-left: 2px;
     margin-right: 2px;
+    margin-bottom: 0;
     display: grid;
-    grid-template-areas: 
+    grid-template-columns: 1fr 1fr;
+    /* grid-template-areas: 
+      "image"
+      "contact"
       "header"
       "experience"
       "company-name2"
@@ -514,57 +518,93 @@ h4 {
       "projects"
       "skills"
       "languages"
-      "awards";
+      "awards"; */
     width: auto;
   }
 
-  .header {
-    grid-area: header;
-    margin-bottom: 10px;
+  .image {
+    /* grid-area: image; */
+    /* width: 50%; */
+    grid-column: 1 / span 1;
   }
 
-  /* .contact-info {
-    grid-area: contact;
-  } */
+  .image img {
+    width: auto;
+    height: auto;
+  }
+
+  .contact-info {
+    /* grid-area: contact; */
+    /* width: 50%; */
+    display: grid;
+    grid-column: 2 / 3;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .header {
+    /* grid-area: header; */
+    margin-bottom: 10px;
+    grid-column: 1 / span 2;
+    grid-row: 2;
+    position: relative;
+  }
 
   .experience {
-    grid-area: experience;
+    /* grid-area: experience; */
+    grid-column: 1 / span 2;
+    grid-row: 3;
   }
 
   .company-name2 {
-    grid-area: company-name2;
+    /* grid-area: company-name2; */
+    grid-column: 1 / span 2;
+    grid-row: 4;
   }
 
   .company-name3 {
-    grid-area: company-name3;
+    /* grid-area: company-name3; */
+    grid-column: 1 / span 2;
+    grid-row: 5;
   }
 
   .company-name4 {
-    grid-area: company-name4;
+    /* grid-area: company-name4; */
+    grid-column: 1 / span 2;
+    grid-row: 6;
   }
 
   .education {
-    grid-area: education;
+    /* grid-area: education; */
+    grid-column: 1 / span 2;
+    grid-row: 7;
   }
 
   .projects {
-    grid-area: projects;
+    /* grid-area: projects; */
+    grid-column: 1 / span 2;
+    grid-row: 8;
   }
 
   .skills {
-    grid-area: skills;
+    /* grid-area: skills; */
+    grid-column: 1 / span 1;
+    grid-row: 9;
   }
 
   .languages {
-    grid-area: languages;
+    /* grid-area: languages; */
+    grid-column: 2 / span 1;
+    grid-row: 9;
   }
 
   .awards {
-    grid-area: awards;
+    /* grid-area: awards; */
+    grid-column: 1 / span 2;
+    grid-row: 10;
   }
 
-  .image,
-  .contact-info,
   .about-me,
   .experience-sideTab,
   .education-sideTab,
@@ -576,6 +616,7 @@ h4 {
 
   .container2 {
     display: flex;
+    margin-top: 0;
   }
   
   .linkedIn-tab,
