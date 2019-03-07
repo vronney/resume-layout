@@ -523,7 +523,7 @@ h4 {
       "skills"
       "languages"
       "awards"; */
-    width: auto;
+    width: 350px;
   }
 
   .image {
@@ -639,7 +639,7 @@ h4 {
   }
 
   .copyright-tab {
-    width: 72.5vw;
+    width: 282px;
   }
 
   .copyright-text {
