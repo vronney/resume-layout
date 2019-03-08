@@ -509,7 +509,7 @@ h4 {
     margin-right: 8px;
     margin-bottom: 0;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, auto auto);
     /* grid-template-areas: 
       "image"
       "contact"
@@ -523,7 +523,10 @@ h4 {
       "skills"
       "languages"
       "awards"; */
-    width: 100vw;
+    max-width: 85vw;
+    padding: 10px;
+    overflow: auto;
+    justify-content: center;  
   }
 
   .image {
@@ -533,7 +536,7 @@ h4 {
   }
 
   .image img {
-    width: auto;
+    width: 150px;
     height: auto;
   }
 
@@ -639,7 +642,7 @@ h4 {
   }
 
   .copyright-tab {
-    width: 78vw;
+    width: 310px;
   }
 
   .copyright-text {
