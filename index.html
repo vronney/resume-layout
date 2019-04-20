@@ -11,32 +11,53 @@
 </head>
 
 <body>
-   <div class="container1">
+    <div class="container1">
         <div class="image">
             <img src="images/me.jpg" alt="pic of me">
         </div>
-        <div class="about-me">
+
+        <!-- Section will be displayed when sideTab is clicked to reveal -->
+        <div id="aboutMeSection">
+            <h1 class="aboutMeHeader">Hello there! My name is Ron Vargas and I'm a Front-End Web Devloper.</h1>
+            <p class="aboutMeText">I am a Front-End Web Developer looking for a position where a passion for innovation,
+                a culture of teamwork, and opportunities for growth are valued and rewarded. My background in sales
+                enables me to be as comfortable speaking with potential clients as well as fellow developers. I have
+                generated a robust front-end portfolio showcasing web apps made with Vanilla JavaScript and React and
+                have completed the Udacity's Front-End Web Developer Nanodegree. </p>
+            <br>
+            <p class="aboutMeText">I am actively looking for a position as a Front-End Web Developer with a large/small
+                company that will mold me in to a ninja Front-End Developer. I thrive in positive, team-oriented
+                environments and enjoy having the creative freedom to problem solve, as well as, casting vision and
+                implementing strategic ideas.</p>
+            <br>
+            <img class="aboutMeImage" src="https://place-hold.it/300x500" alt="pic of me">
+        </div>
+        <!-- End of main body section that is hidden -->
+
+        <div class="about-me" id="about-me">
             <h4 class="aboutMe-text">About Me</h4>
         </div>
-        <div class="experience-sideTab">
+        <div class="experience-sideTab" id="experience-sideTab">
             <h4 class="experience-sideTab-text">Experience</h4>
         </div>
-        <div class="education-sideTab">
+        <div class="education-sideTab" id="education-sideTab">
             <h4 class="education-sideTab-text">Education</h4>
         </div>
-        <div class="projects-sideTab">
+        <div class="projects-sideTab" id="projects-sideTab">
             <h4 class="projects-sideTab-text">Projects</h4>
         </div>
-        <div class="skills-sideTab">
+        <div class="skills-sideTab" id="skills-sideTab">
             <h4 class="skills-sideTab-text">Skills</h4>
         </div>
-        <div class="awards-sideTab">
+        <div class="awards-sideTab" id="awards-sideTab">
             <h4 class="awards-sideTab-text">Awards</h4>
         </div>
+
         <div class="header">
             <h1 class="name">Ronney Vargas</h1>
-            <p>I am a curious self-motivated Front-End Web Developer with a background in sales which enables me to be as comfortable speaking with
-            potential clients as well as fellow developers.</p>
+            <p>I am a curious self-motivated Front-End Web Developer with a background in sales which enables me to be
+                as comfortable speaking with
+                potential clients as well as fellow developers.</p>
         </div>
         <div class="contact-info">
             <h4>Contact Me!</h4>
@@ -109,19 +130,22 @@
     </div>
     <div class="container2">
         <div class="linkedIn-tab">
-            <h4 class="linkedIn-text"><a href="https://www.linkedin.com/in/ronney-vargas/" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin" aria-hidden="true"></i></a></h4>
+            <h4 class="linkedIn-text"><a href="https://www.linkedin.com/in/ronney-vargas/" target="_blank"
+                    rel="noopener noreferrer"><i class="fa fa-linkedin" aria-hidden="true"></i></a></h4>
         </div>
         <div class="github-tab">
-            <h4 class="github-text"><a href="https://github.com/vronney?tab=repositories" target="_blank" rel="noopener noreferrer"><i class="fa fa-github-alt" aria-hidden="true"></i></a></h4>
+            <h4 class="github-text"><a href="https://github.com/vronney?tab=repositories" target="_blank"
+                    rel="noopener noreferrer"><i class="fa fa-github-alt" aria-hidden="true"></i></a></h4>
         </div>
         <div class="codepen-tab">
-            <h4 class="codepen-text"><a href="https://codepen.io/vronney/" target="_blank" rel="noopener noreferrer"><i class="fa fa-codepen" aria-hidden="true"></i></a></h4>
+            <h4 class="codepen-text"><a href="https://codepen.io/vronney/" target="_blank" rel="noopener noreferrer"><i
+                        class="fa fa-codepen" aria-hidden="true"></i></a></h4>
         </div>
         <div class="copyright-tab">
-            <h4 class="copyright-text">&copy; 2019 R&E Web Designs                    </h4>
+            <h4 class="copyright-text">&copy; 2019 R&E Web Designs </h4>
         </div>
     </div>
-        
+
     <script src="script.js"></script>
     <script src="https://use.fontawesome.com/97d54ca2ef.js"></script>
 </body>
