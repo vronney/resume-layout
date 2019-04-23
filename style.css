@@ -23,10 +23,12 @@ body {
   grid-column-gap: 10px;
   margin-left: 250px;
   margin-right: auto;
+  margin-bottom: 20px;
   padding: 10px;
   width: 11in;
   border: 1px solid black;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  height: 944px;
 }
 
 .container2 {
@@ -479,7 +481,11 @@ h4 {
 
 *>div {
   margin-top: 10px;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
+}
+
+span.slideBarText {
+  display: none;
 }
 
 
@@ -534,6 +540,7 @@ h4 {
     padding: 10px;
     overflow: auto;
     justify-content: center;
+    height: auto !important;
   }
 
   .image {
@@ -545,6 +552,57 @@ h4 {
   .image img {
     width: 150px;
     height: auto;
+  }
+
+  span.slideBarText {
+    display: inline;
+    font-size: 1rem !important;
+    margin-left: 5px;
+    margin-top: 5px;
+  }
+
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  @media screen and (max-height: 450px) {
+    .sidenav {
+      padding-top: 15px;
+    }
+
+    .sidenav a {
+      font-size: 18px;
+    }
   }
 
   .contact-info {
@@ -559,10 +617,15 @@ h4 {
 
   .header {
     /* grid-area: header; */
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
+    margin-top: 20px;
     grid-column: 1 / span 2;
     grid-row: 2;
     position: relative;
+  }
+
+  #aboutMeSection {
+    grid-column: 1 / span 2;
   }
 
   .experience {
@@ -668,8 +731,14 @@ h4 {
   }
 }
 
+@media only screen and (min-width: 500px) {
+  #mySidenav {
+    display: none;
+  }
+}
+
 #aboutMeSection {
-  display: none;
+  /* display: none; */
   margin-bottom: 10px;
   position: relative;
   height: 784px;

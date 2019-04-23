@@ -11,13 +11,26 @@
 </head>
 
 <body>
+
     <div class="container1">
         <div class="image">
             <img src="images/me.jpg" alt="pic of me">
+            <span class="slideBarText" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+        </div>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#" class="aboutMeSideBar">About Me</a>
+            <a href="#" class="experienceSideBar">Experience</a>
+            <a href="#" class="educationSideBar">Education</a>
+            <a href="#" class="projectsSideBar">Projects</a>
+            <a href="#" class="skillsSideBar">Skills</a>
+            <a href="#" class="awardsSideBar">Awards</a>
         </div>
 
+
         <!-- Section will be displayed when sideTab is clicked to reveal -->
-        <div id="aboutMeSection">
+        <div id="aboutMeSection" style="display: none">
+            <span class="slideBarText" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
             <h1 class="aboutMeHeader">Hello there! My name is Ron Vargas and I'm a Front-End Web Devloper.</h1>
             <p class="aboutMeText">I am a Front-End Web Developer looking for a position where a passion for innovation,
                 a culture of teamwork, and opportunities for growth are valued and rewarded. My background in sales
@@ -32,6 +45,32 @@
             <br>
             <img class="aboutMeImage" src="https://place-hold.it/300x500" alt="pic of me">
         </div>
+        <div class="experienceSection" style="display: none">
+            <h1 class="experienceHeader">Take a look at my experience.</h1>
+            <h3 class="company-name1">Company, Location - <span>Job Title</span></h3>
+            <p>Month 20XX - Present</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores animi mollitia vel labore itaque dolor
+                perferendis asperiores! Architecto sequi voluptatum consequuntur deserunt ex, voluptas corporis libero
+                enim dicta in eaque!</p>
+            <h3 class="company-name1">Company, Location - <span>Job Title</span></h3>
+            <p>Month 20XX - Present</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores animi mollitia vel labore itaque dolor
+                perferendis asperiores! Architecto sequi voluptatum consequuntur deserunt ex, voluptas corporis libero
+                enim dicta in eaque!</p>
+        </div>
+        <div class="educationSection" style="display: none">
+            <h1 class="educationHeader">Education information goes here.</h1>
+        </div>
+        <div class="projectsSection" style="display: none">
+            <h1 class="projectsHeader">Projects information goes here.</h1>
+        </div>
+        <div class="skillsSection" style="display: none">
+            <h1 class="skillsHeader">Skills information goes here.</h1>
+        </div>
+        <div class="awardsSection" style="display: none">
+            <h1 class="awardsHeader">Awards information goes here.</h1>
+        </div>
+
         <!-- End of main body section that is hidden -->
 
         <div class="about-me" id="about-me">
@@ -52,80 +91,96 @@
         <div class="awards-sideTab" id="awards-sideTab">
             <h4 class="awards-sideTab-text">Awards</h4>
         </div>
-
-        <div class="header">
-            <h1 class="name">Ronney Vargas</h1>
-            <p>I am a curious self-motivated Front-End Web Developer with a background in sales which enables me to be
-                as comfortable speaking with
-                potential clients as well as fellow developers.</p>
-        </div>
-        <div class="contact-info">
-            <h4>Contact Me!</h4>
-            <p>San Antonio, TX</p>
-            <p>(210) 771-8815 </p>
-            <p><a id="email" href="mailto:ronneyvargas@gmail.com">ronneyvargas@gmail.com</a></p>
-        </div>
-        <div class="experience">
-            <h4 class="experience-header">Experience</h4>
-            <h3 class="company-name1">Company, Location - <span>Job Title</span></h3>
-            <p>Month 20XX - Present</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores animi mollitia vel labore itaque dolor
-                perferendis asperiores! Architecto sequi voluptatum consequuntur deserunt ex, voluptas corporis libero
-                enim dicta in eaque!</p>
-        </div>
-        <div class="company-name2">
-            <h3>Company, Location - <span>Job Title</span></h3>
-            <p>Month 20XX - Present</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores animi mollitia vel labore itaque dolor
-                perferendis asperiores! Architecto sequi voluptatum consequuntur deserunt ex, voluptas corporis libero
-                enim dicta in eaque!</p>
-        </div>
-        <div class="company-name3">
-            <h3 class="company-name3">Company, Location - <span>Job Title</span></h3>
-            <p>Month 20XX - Present</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores animi mollitia vel labore itaque dolor
-                perferendis asperiores! Architecto sequi voluptatum consequuntur deserunt ex, voluptas corporis libero
-                enim dicta in eaque!</p>
-        </div>
-        <div class="company-name4">
-            <h3>Company, Location - <span>Job Title</span></h3>
-            <p>Month 20XX - Present</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores animi mollitia vel labore itaque dolor
-                perferendis asperiores! Architecto sequi voluptatum consequuntur deserunt ex, voluptas corporis libero
-                enim dicta in eaque!</p>
-        </div>
-        <div class="education">
-            <h4 class="education-header">Education</h4>
-            <h3 class="education-name">School Name, Location - <span>Degree</span></h3>
-            <p>Month 20XX - Month 20XX</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores animi mollitia vel labore itaque dolor
-                perferendis asperiores! Architecto sequi voluptatum consequuntur deserunt ex, voluptas corporis libero
-                enim dicta in eaque!</p>
-        </div>
-        <div class="projects">
-            <h4 class="projects-header">Projects</h4>
-            <h3 class="projects-name">Project Name - <span>Detail</span></h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores animi mollitia vel labore itaque dolor
-                perferendis asperiores! Architecto sequi voluptatum consequuntur deserunt ex, voluptas corporis libero
-                enim dicta in eaque!</p>
-        </div>
-        <div class="skills">
-            <h4 class="skills-header">Skills</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, odio minima hic deserunt ea recusandae
-                cumque asperiores consequatur rerum placeat soluta minus possimus suscipit saepe! Corporis ab itaque
-                soluta veniam.</p>
-        </div>
-        <div class="awards">
-            <h4 class="awards-header">Awards</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, odio minima hic deserunt ea recusandae
-                cumque asperiores consequatur rerum placeat soluta minus possimus suscipit saepe! Corporis ab itaque
-                soluta veniam.</p>
-        </div>
-        <div class="languages">
-            <h4 class="languages-header">Languages</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, odio minima hic deserunt ea recusandae
-                cumque asperiores consequatur rerum placeat soluta minus possimus suscipit saepe! Corporis ab itaque
-                soluta veniam.</p>
+        <div class="innerContainer" style="visibility: visible; display: contents">
+            <div class="header">
+                <h1 class="name">Ronney Vargas</h1>
+                <p>I am a curious self-motivated Front-End Web Developer with a background in sales which enables me to
+                    be as comfortable speaking with
+                    potential clients as well as fellow developers.</p>
+            </div>
+            <div class="contact-info">
+                <h4>Contact Me!</h4>
+                <p>San Antonio, TX</p>
+                <p>(210) 771-8815 </p>
+                <p><a id="email" href="mailto:ronneyvargas@gmail.com">ronneyvargas@gmail.com</a></p>
+            </div>
+            <div class="experience">
+                <h4 class="experience-header">Experience</h4>
+                <h3 class="company-name1">Company, Location - <span>Job Title</span></h3>
+                <p>Month 20XX - Present</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores animi mollitia vel labore itaque
+                    dolor
+                    perferendis asperiores! Architecto sequi voluptatum consequuntur deserunt ex, voluptas corporis
+                    libero
+                    enim dicta in eaque!</p>
+            </div>
+            <div class="company-name2">
+                <h3>Company, Location - <span>Job Title</span></h3>
+                <p>Month 20XX - Present</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores animi mollitia vel labore itaque
+                    dolor
+                    perferendis asperiores! Architecto sequi voluptatum consequuntur deserunt ex, voluptas corporis
+                    libero
+                    enim dicta in eaque!</p>
+            </div>
+            <div class="company-name3">
+                <h3 class="company-name3">Company, Location - <span>Job Title</span></h3>
+                <p>Month 20XX - Present</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores animi mollitia vel labore itaque
+                    dolor
+                    perferendis asperiores! Architecto sequi voluptatum consequuntur deserunt ex, voluptas corporis
+                    libero
+                    enim dicta in eaque!</p>
+            </div>
+            <div class="company-name4">
+                <h3>Company, Location - <span>Job Title</span></h3>
+                <p>Month 20XX - Present</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores animi mollitia vel labore itaque
+                    dolor
+                    perferendis asperiores! Architecto sequi voluptatum consequuntur deserunt ex, voluptas corporis
+                    libero
+                    enim dicta in eaque!</p>
+            </div>
+            <div class="education">
+                <h4 class="education-header">Education</h4>
+                <h3 class="education-name">School Name, Location - <span>Degree</span></h3>
+                <p>Month 20XX - Month 20XX</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores animi mollitia vel labore itaque
+                    dolor
+                    perferendis asperiores! Architecto sequi voluptatum consequuntur deserunt ex, voluptas corporis
+                    libero
+                    enim dicta in eaque!</p>
+            </div>
+            <div class="projects">
+                <h4 class="projects-header">Projects</h4>
+                <h3 class="projects-name">Project Name - <span>Detail</span></h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores animi mollitia vel labore itaque
+                    dolor
+                    perferendis asperiores! Architecto sequi voluptatum consequuntur deserunt ex, voluptas corporis
+                    libero
+                    enim dicta in eaque!</p>
+            </div>
+            <div class="skills">
+                <h4 class="skills-header">Skills</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, odio minima hic deserunt ea
+                    recusandae
+                    cumque asperiores consequatur rerum placeat soluta minus possimus suscipit saepe! Corporis ab itaque
+                    soluta veniam.</p>
+            </div>
+            <div class="awards">
+                <h4 class="awards-header">Awards</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, odio minima hic deserunt ea
+                    recusandae
+                    cumque asperiores consequatur rerum placeat soluta minus possimus suscipit saepe! Corporis ab itaque
+                    soluta veniam.</p>
+            </div>
+            <div class="languages">
+                <h4 class="languages-header">Languages</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, odio minima hic deserunt ea
+                    recusandae
+                    cumque asperiores consequatur rerum placeat soluta minus possimus suscipit saepe! Corporis ab itaque
+                    soluta veniam.</p>
+            </div>
         </div>
     </div>
     <div class="container2">
