@@ -19,6 +19,11 @@ let projectsSection = document.querySelector(".projectsSection");
 let skillsSection = document.querySelector(".skillsSection");
 let awardsSection = document.querySelector(".awardsSection");
 let aboutMeSideBar = document.querySelector(".aboutMeSideBar");
+let experienceSideBar = document.querySelector(".experienceSideBar");
+let educationSideBar = document.querySelector(".educationSideBar");
+let projectsSideBar = document.querySelector(".projectsSideBar");
+let skillsSideBar = document.querySelector(".skillsSideBar");
+let awardsSideBar = document.querySelector(".awardsSideBar");
 let image = document.querySelector(".image");
 
 // About Me Section
@@ -48,22 +53,6 @@ aboutMeClearContent = function () {
 }
 
 document.getElementById("about-me").addEventListener("click", aboutMeClearContent);
-
-// About Me SideBar
-
-aboutMeSideBarMenu = function () {
-    if (aboutMeSection.style.display === "none" && innerContainer.style.visibility === "visible") {
-        aboutMeSection.style.display = "inline";
-        innerContainer.style.visibility = "hidden";
-        image.style.display = "none";
-    } else {
-        innerContainer.style.visibility = "visible";
-        aboutMeSection.style.display = "none";
-        image.style.display = "inline";
-    }
-}
-
-document.querySelector(".aboutMeSideBar").addEventListener("click", aboutMeSideBarMenu);
 
 // Experience Section
 experienceSectionClearContent = function () {
@@ -202,12 +191,135 @@ awardsSectionClearContent = function () {
 
 document.getElementById("awards-sideTab").addEventListener("click", awardsSectionClearContent);
 
-// SlideBar
+// Home SideBar
+
+homeSideBarMenu = function () {
+    aboutMeSection.style.display = "none";
+    experienceSection.style.display = "none";
+    educationSection.style.display = "none";
+    projectsSection.style.display = "none";
+    skillsSection.style.display = "none";
+    awardsSection.style.display = "none";
+    innerContainer.style.visibility = "visible";
+    image.style.display = "inline";
+}
+
+document.querySelector(".homeSideBar").addEventListener("click", homeSideBarMenu);
+
+// About Me SideBar
+
+aboutMeSideBarMenu = function () {
+    if (aboutMeSection.style.display === "none" && innerContainer.style.visibility === "visible") {
+        aboutMeSection.style.display = "inline";
+        innerContainer.style.visibility = "hidden";
+        image.style.display = "none";
+    } else {
+        innerContainer.style.visibility = "visible";
+        aboutMeSection.style.display = "none";
+        image.style.display = "inline";
+    }
+}
+
+document.querySelector(".aboutMeSideBar").addEventListener("click", aboutMeSideBarMenu);
+
+// Experience SideBar
+
+experienceSideBarMenu = function () {
+    if (experienceSection.style.display === "none" && innerContainer.style.visibility === "visible") {
+        experienceSection.style.display = "inline";
+        innerContainer.style.visibility = "hidden";
+        image.style.display = "none";
+    } else {
+        innerContainer.style.visibility = "visible";
+        experienceSection.style.display = "none";
+        image.style.display = "inline";
+    }
+}
+
+document.querySelector(".experienceSideBar").addEventListener("click", experienceSideBarMenu);
+
+// Education SideBar
+
+educationSideBarMenu = function () {
+    if (educationSection.style.display === "none" && innerContainer.style.visibility === "visible") {
+        educationSection.style.display = "inline";
+        innerContainer.style.visibility = "hidden";
+        image.style.display = "none";
+    } else {
+        educationSection.style.display = "none";
+        innerContainer.style.visibility = "visible";
+        image.style.display = "inline";
+    }
+}
+
+document.querySelector(".educationSideBar").addEventListener("click", educationSideBarMenu);
+
+// Projects SideBar 
+
+projectsSideBarMenu = function () {
+    if (projectsSection.style.display === "none" && innerContainer.style.visibility === "visible") {
+        projectsSection.style.display = "inline";
+        innerContainer.style.visibility = "hidden";
+        image.style.display = "none";
+    } else {
+        projectsSection.style.display = "none";
+        innerContainer.style.visibility = "visible";
+        image.style.display = "inline";
+    }
+}
+
+document.querySelector(".projectsSideBar").addEventListener("click", projectsSideBarMenu);
+
+// Skills SideBar
+
+skillsSideBarMenu = function () {
+    if (skillsSection.style.display === "none" && innerContainer.style.visibility === "visible") {
+        skillsSection.style.display = "inline";
+        innerContainer.style.visibility = "hidden";
+        image.style.display = "none";
+    } else {
+        skillsSection.style.display = "none";
+        innerContainer.style.visibility = "visible";
+        image.style.display = "inline";
+    }
+}
+
+document.querySelector(".skillsSideBar").addEventListener("click", skillsSideBarMenu);
+
+// Awards SideBar
+
+awardsSideBarMenu = function () {
+    if (awardsSection.style.display === "none" && innerContainer.style.visibility === "visible") {
+        awardsSection.style.display = "inline";
+        innerContainer.style.visibility = "hidden";
+        image.style.display = "none";
+    } else {
+        awardsSection.style.display = "none";
+        innerContainer.style.visibility = "visible";
+        image.style.display = "inline";
+    }
+}
+
+document.querySelector(".awardsSideBar").addEventListener("click", awardsSideBarMenu);
+
+// mySidenav
 
 function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("mySidenav").style.width = "200px";
 }
 
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 }
+
+mySidenav = document.getElementById("mySidenav");
+
+// Will slide mySidenav back to 0 when clicking anywhere outside mySidenav
+
+window.onclick = function (event) {
+    if (event.target == mainContainer || event.target == aboutMeSection) {
+        mySidenav.style.width = "0";
+    }
+}
+
+
